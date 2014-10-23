@@ -13,7 +13,7 @@ gem 'thin'
 
 # activerecord ORM
 gem 'activesupport'
-gem 'activerecord'
+gem 'activerecord' 
 
 #face recognition
 gem 'gmaps4rails'
