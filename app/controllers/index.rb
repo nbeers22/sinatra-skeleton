@@ -1,6 +1,6 @@
 configure do
   enable :sessions
-end
+end 
 
 get '/' do
   if logged_in?
@@ -29,7 +29,7 @@ end
 
 delete '/sessions/:id' do
   session.clear
-  redirect '/'
+  redirect '/' 
 end
 
 # USERS 
