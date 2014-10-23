@@ -11,6 +11,23 @@
   <title>Youtube Searcher</title>
 </head>
 <body>
+  <nav>
+    <div class="brand"><p></p>
+    </div>
+    <ul>
+      <% if logged_in? %>
+        <li>
+          <form id="sign-out" action="/sessions/<%= current_user.id %>" method="post">
+            <input name="_method" type="hidden" value="delete" />
+            <input type="submit" value="Sign Out">
+          </form>
+        </li>
+      <% else %>
+        <li><a href="/sessions/new">Sign In</a></li>
+        <li><a href="/users/new">Sign Up</a></li>
+      <% end %>
+    </ul>
+  </nav>
   <%= yield %>
 </body>
 </html>

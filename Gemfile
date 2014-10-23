@@ -17,7 +17,7 @@ gem 'activerecord'
 
 #face recognition
 gem 'gmaps4rails'
-
+gem 'bcrypt'
 gem 'rake'
 
 gem 'shotgun'		

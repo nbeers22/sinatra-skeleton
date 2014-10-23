@@ -12,3 +12,23 @@
 	color: yellow;
 	size: 2em;
 }
+body {
+	background-color: blue;
+}
+nav{
+	text-align: center;
+	background-color: yellow;
+	height:6em;
+}
+nav li{
+	background-color: red;
+	display:inline-block;
+	height:1.4em;
+	width:5em;
+	text-align: center;
+}
+
+#red {
+	color: red;
+	font-weight: bold;
+}
